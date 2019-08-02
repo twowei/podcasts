@@ -1,0 +1,233 @@
+:root {
+    --sys-sans: -apple-system,BlinkMacSystemFont,"Helvetica Neue";
+    --cjk-sans:  "PingFang SC","Hiragino Sans GB","Droid Sans Fallback","Microsoft YaHei";
+}
+.color_tovi_brand{
+    fill: #333;
+}
+/* 'SimHei' */
+body{
+    /* font-family:-apple-system,'Microsoft Yahei',sans-serif; */
+    line-height: 1.7;
+    font-family: "Droid Serif",var(--cjk-sans),sans-serif;
+    font: 400 18px/1.42 var(--sys-sans),var(--cjk-sans),sans-serif;
+    color: rgba(0,0,0,.9);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.header{
+    /* flex布局开始 */
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    height: 96px;
+    /* background-color: #0000FF08; */
+    /* flex布局结束 */
+}
+
+.header .logo{
+    margin-left: -6px;
+}
+
+svg.logo{
+    fill: black;
+    /* background:#0e1a25; */
+    transition: background 0.2s, transform 0.2s ease-out, fill 0.2s;
+}
+
+svg.logo:hover{
+    fill: black;
+    /* background:black; */
+    transform: rotate(10deg) scale(1.2); 
+    transition: background 0.2s, transform 0.2s ease-out, fill 0.2s;
+    
+}
+
+.header nav{
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: -8px; 
+}
+
+.header nav a{
+        padding: 8px 0px;
+        margin:  0px 16px;
+        color: black;
+
+}
+
+nav a:hover{
+    color:#001AFF;
+    text-decoration: none;
+}
+
+.header nav .current{
+    color: #001AFF;
+    border-bottom: 2px #001AFF solid;
+}
+
+footer{
+    /* flex布局开始 */
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    height: 64px;
+    border-top: 1px solid #00000010;
+    font-size: 16px;
+    margin: 0 15px;
+    padding: 0;
+    margin-top: 80px;
+    /* flex布局结束 */
+}
+
+footer .logo{
+    width:36px;
+    height: 36px;
+    margin: 0;
+    margin-left: -4px;
+    padding: 0;
+}
+
+footer nav a{
+    margin-left: 16px;
+    text-decoration: none;
+}
+
+svg.tv_icon{
+    width:24px;
+    height:auto;
+    fill: black;
+    /* background:#0e1a25; */
+    transition: background 0.2s, transform 0.2s ease-out, fill 0.2s;
+}
+
+svg.tv_icon:hover{
+    fill: #001AFF;
+    /* background:black; */
+    transform: scale(1.2) rotate(10deg);
+    transition: background 0.2s, transform 0.2s ease-out, fill 0.2s;
+}
+
+
+.top{
+    margin-top: 40px;
+    margin-bottom:40px;
+}
+
+.top .name, .cata{
+    font-family: 'Biryani', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    /* font-size:60px; */
+}
+
+
+
+.top .intro{
+    color:rgba(0, 0, 0, 1);
+    font-size:16px;
+    line-height: 1.5;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.top .subnav{
+    font-size:16px;
+    line-height: 1.5;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.top .subnav a{
+    border-bottom: none;
+    color:rgba(0, 0, 0, 0.35);
+    margin-right: 12px;
+}
+
+
+
+.top .subnav a:hover{
+    color:#001AFF;
+}
+
+.top .subnav .current{
+    color: #001AFF;
+}
+
+.svgIcon {
+	vertical-align:middle;
+}
+
+/* xs */
+@media(max-width:768px){
+    .header .logo{
+        width:48px;
+        height:48px;
+    }
+    .header nav{
+        font-size: 16px;
+    }
+    .header nav a{
+        margin:  0px 8px;
+    }
+    /* .top{
+        margin-bottom:0px;
+    }    */
+    .top .name, .cata, .year{
+        font-size:36px;
+    }
+    .container{
+        padding: 0 32px;
+    }
+}
+
+@media(min-width:768px){
+    .top .name, .cata, .year{
+        font-size:44px;
+    }
+}
+
+@media(min-width:992px){
+    .top .name, .cata, .year{
+        font-size:52px;
+    }
+}
+
+@media(min-width:1200px){
+    .top .name, .cata, .year{
+        font-size:60px;
+    }
+}
+
+/* xs */
+@media(max-width:768px){ 
+    .cata, .year{
+        margin-top:24px;
+    }
+
+}
+
+@media(min-width:768px){
+    .cata, .year{
+        margin-top:24px;
+    }
+}
+
+@media(min-width:992px){
+    .cata, .year{
+        margin-top:24px;
+    }
+}
+
+@media(min-width:1200px){
+    .cata, .year{
+        margin-top:24px;
+    }
+}
+
+.goback{
+    cursor: pointer;
+}
