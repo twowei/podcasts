@@ -137,3 +137,26 @@ font-weight: 600;
 .workGrid li a{
 	color: #000;
   }
+
+  .t_icon{
+	margin-top:64px;
+	margin-bottom: 16px;
+	margin-left: 4px;
+	font-size: 18px;
+	font-weight: 500; 
+}
+
+.data a{
+	color: #001AFF;
+	font-weight: 600;
+	text-decoration: underline;
+	transition: color 0.3s ease-in-out;
+	transition: font-size 0.3s ease-in-out;
+}
+
+.data a:hover{
+	color:rgb(255, 0, 200);
+	font-size: 17px;
+	transition: color 0.3s ease-in-out;
+	transition: font-size 0.3s ease-in-out;
+}
